@@ -30,7 +30,7 @@ grails:
             css: text/css
             csv: text/csv
             form: application/x-www-form-urlencoded
-            html: 
+            html:
               - text/html
               - application/xhtml+xml
             js: text/javascript
@@ -40,7 +40,7 @@ grails:
             multipartForm: multipart/form-data
             rss: application/rss+xml
             text: text/plain
-            hal: 
+            hal:
               - application/hal+json
               - application/hal+xml
             xml:
@@ -70,8 +70,8 @@ hibernate:
         queries: false
         use_second_level_cache: true
         use_query_cache: false
-        region.factory_class: 'org.hibernate.cache.ehcache.EhCacheRegionFactory' 
-        
+        region.factory_class: 'org.hibernate.cache.ehcache.EhCacheRegionFactory'
+
 dataSource:
     pooled: true
     jmxExport: true
@@ -110,3 +110,7 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+
+security:
+  user:
+    password: password
